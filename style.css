@@ -234,3 +234,67 @@ textarea {
 .section-description {
     margin-bottom: 35px;
 }
+
+/* .hidden section */
+.hide {
+    display: none;
+}
+
+/* Responsive Design */
+
+/* Mobile Devices */
+@media screen and (max-width: 576px) {
+    .header {
+        background-image: none;
+    }
+    nav > ul, nav, .banner, .skills-container,.resume-container, .about-info-container {
+        flex-direction: column;
+    }
+    .banner .profile-pic{
+        width: 100%;
+    }
+    .btn-primary{
+        margin-bottom: 15px;
+    }
+    #what-i-do-description, .banner{
+        padding: 20px;
+    }
+    .section-title {
+        margin-top: -70px;
+    }
+    footer{
+        padding: 10px;
+        flex-direction: column;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    .footer-column:first-child{
+        margin-bottom: 100px;
+        align-items: center;
+    }
+    .social-link {
+        display: flex;
+        justify-content: center;
+    }
+    .contact input[type="text"],
+    input[type="email"],
+    textarea {
+    width: 80%;
+    }
+    form {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* medium devices */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    footer{
+        padding: 30px;
+    }
+    .btn-primary{
+        margin-bottom: 15px;
+    }
+}
